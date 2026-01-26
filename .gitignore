@@ -1,0 +1,10 @@
+.DS_Store
+**/.DS_Store
+imgui.ini
+
+# Exclude local project checkouts (keep docs/ for GitHub Pages)
+RaidBuilder/
+RaidBuilderGodot/
+SMLParser/
+SMLUI/
+VoxelEngine/
