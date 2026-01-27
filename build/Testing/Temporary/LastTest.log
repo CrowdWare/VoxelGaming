@@ -1,0 +1,19 @@
+Start testing: Jan 27 17:16 CET
+----------------------------------------------------------
+1/1 Testing: rotation_controls_test
+1/1 Test: rotation_controls_test
+Command: "/Users/art/SourceCode/VoxelGaming/build/RaidBuilder/rotation_controls_test"
+Directory: /Users/art/SourceCode/VoxelGaming/build/RaidBuilder
+"rotation_controls_test" start time: Jan 27 17:16 CET
+Output:
+----------------------------------------------------------
+Assertion failed: (c.Front() == 6), function main, file rotation_controls_test.cpp, line 164.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"rotation_controls_test" end time: Jan 27 17:16 CET
+"rotation_controls_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 27 17:16 CET
