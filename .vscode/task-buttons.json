@@ -1,0 +1,16 @@
+{
+  "buttons": [
+    {
+      "name": "Build",
+      "task": "Build",
+      "icon": "🔨",
+      "tooltip": "Build the project"
+    },
+    {
+      "name": "Run",
+      "task": "Run",
+      "icon": "▶",
+      "tooltip": "Run app"
+    }
+  ]
+}

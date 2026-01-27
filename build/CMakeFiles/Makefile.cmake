@@ -64,4 +64,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "SMLUI/CMakeFiles/SMLUI.dir/DependInfo.cmake"
   "VoxelEngine/CMakeFiles/VoxelEngine.dir/DependInfo.cmake"
   "RaidBuilder/CMakeFiles/RaidBuilder.dir/DependInfo.cmake"
+  "RaidBuilder/CMakeFiles/Shaders.dir/DependInfo.cmake"
+  "RaidBuilder/CMakeFiles/BlockBake.dir/DependInfo.cmake"
+  "RaidBuilder/CMakeFiles/BakeBlocks.dir/DependInfo.cmake"
   )

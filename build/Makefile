@@ -168,6 +168,45 @@ RaidBuilder/fast:
 	$(MAKE) $(MAKESILENT) -f RaidBuilder/CMakeFiles/RaidBuilder.dir/build.make RaidBuilder/CMakeFiles/RaidBuilder.dir/build
 .PHONY : RaidBuilder/fast
 
+#=============================================================================
+# Target rules for targets named Shaders
+
+# Build rule for target.
+Shaders: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Shaders
+.PHONY : Shaders
+
+# fast build rule for target.
+Shaders/fast:
+	$(MAKE) $(MAKESILENT) -f RaidBuilder/CMakeFiles/Shaders.dir/build.make RaidBuilder/CMakeFiles/Shaders.dir/build
+.PHONY : Shaders/fast
+
+#=============================================================================
+# Target rules for targets named BlockBake
+
+# Build rule for target.
+BlockBake: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BlockBake
+.PHONY : BlockBake
+
+# fast build rule for target.
+BlockBake/fast:
+	$(MAKE) $(MAKESILENT) -f RaidBuilder/CMakeFiles/BlockBake.dir/build.make RaidBuilder/CMakeFiles/BlockBake.dir/build
+.PHONY : BlockBake/fast
+
+#=============================================================================
+# Target rules for targets named BakeBlocks
+
+# Build rule for target.
+BakeBlocks: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BakeBlocks
+.PHONY : BakeBlocks
+
+# fast build rule for target.
+BakeBlocks/fast:
+	$(MAKE) $(MAKESILENT) -f RaidBuilder/CMakeFiles/BakeBlocks.dir/build.make RaidBuilder/CMakeFiles/BakeBlocks.dir/build
+.PHONY : BakeBlocks/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -176,6 +215,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... BakeBlocks"
+	@echo "... Shaders"
+	@echo "... BlockBake"
 	@echo "... RaidBuilder"
 	@echo "... SMLParser"
 	@echo "... SMLUI"

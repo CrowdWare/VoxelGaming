@@ -10,5 +10,8 @@
 /Users/art/SourceCode/VoxelGaming/build/VoxelEngine/CMakeFiles/edit_cache.dir
 /Users/art/SourceCode/VoxelGaming/build/VoxelEngine/CMakeFiles/rebuild_cache.dir
 /Users/art/SourceCode/VoxelGaming/build/RaidBuilder/CMakeFiles/RaidBuilder.dir
+/Users/art/SourceCode/VoxelGaming/build/RaidBuilder/CMakeFiles/Shaders.dir
+/Users/art/SourceCode/VoxelGaming/build/RaidBuilder/CMakeFiles/BlockBake.dir
+/Users/art/SourceCode/VoxelGaming/build/RaidBuilder/CMakeFiles/BakeBlocks.dir
 /Users/art/SourceCode/VoxelGaming/build/RaidBuilder/CMakeFiles/edit_cache.dir
 /Users/art/SourceCode/VoxelGaming/build/RaidBuilder/CMakeFiles/rebuild_cache.dir
