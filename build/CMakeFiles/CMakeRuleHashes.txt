@@ -2,4 +2,4 @@
 ee6893ee0d160b5733da0c346278ef50 /Users/art/SourceCode/VoxelGaming/RaidBuilder/shaders/world.vert.spv
 e12ce4174c7ed94b225354ef5ef8fb65 RaidBuilder/CMakeFiles/BakeBlocks
 e12ce4174c7ed94b225354ef5ef8fb65 RaidBuilder/CMakeFiles/Shaders
-3f79dc37442b3073a9a36617a1bc4cbe blocks_cache/block.glb
+712ebd3834bc2106d695c973c722a33c blocks_cache/block.glb
