@@ -5,6 +5,9 @@
       "label": "Build",
       "type": "shell",
       "command": "./build.sh",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
       "group": "build",
       "presentation": {
         "reveal": "always",
@@ -17,6 +20,10 @@
       "label": "Run",
       "type": "shell",
       "command": "./run.sh",
+      "dependsOn": "Build",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
       "presentation": {
         "reveal": "always",
         "panel": "shared"
