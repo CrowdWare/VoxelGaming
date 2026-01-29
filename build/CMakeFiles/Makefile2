@@ -275,11 +275,11 @@ VoxelEngine/CMakeFiles/VoxelEngine.dir/clean:
 # Target rules for target RaidBuilder/CMakeFiles/RaidBuilder.dir
 
 # All Build rule for target.
-RaidBuilder/CMakeFiles/RaidBuilder.dir/all: RaidBuilder/CMakeFiles/Shaders.dir/all
-RaidBuilder/CMakeFiles/RaidBuilder.dir/all: RaidBuilder/CMakeFiles/BakeBlocks.dir/all
 RaidBuilder/CMakeFiles/RaidBuilder.dir/all: SMLParser/CMakeFiles/SMLParser.dir/all
 RaidBuilder/CMakeFiles/RaidBuilder.dir/all: SMLUI/CMakeFiles/SMLUI.dir/all
 RaidBuilder/CMakeFiles/RaidBuilder.dir/all: VoxelEngine/CMakeFiles/VoxelEngine.dir/all
+RaidBuilder/CMakeFiles/RaidBuilder.dir/all: RaidBuilder/CMakeFiles/Shaders.dir/all
+RaidBuilder/CMakeFiles/RaidBuilder.dir/all: RaidBuilder/CMakeFiles/BakeBlocks.dir/all
 	$(MAKE) $(MAKESILENT) -f RaidBuilder/CMakeFiles/RaidBuilder.dir/build.make RaidBuilder/CMakeFiles/RaidBuilder.dir/depend
 	$(MAKE) $(MAKESILENT) -f RaidBuilder/CMakeFiles/RaidBuilder.dir/build.make RaidBuilder/CMakeFiles/RaidBuilder.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=5,6,7,8,9,10 "Built target RaidBuilder"
