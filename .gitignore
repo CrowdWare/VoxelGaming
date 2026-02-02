@@ -13,3 +13,5 @@ VoxelEngine/
 build/
 sms_kotlin/
 sms_cpp/
+sms/
+sml-parser/
