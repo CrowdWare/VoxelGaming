@@ -5,8 +5,11 @@ imgui.ini
 # Exclude local project checkouts (keep docs/ for GitHub Pages)
 RaidBuilder/
 RaidBuilderGodot/
+RaidSimulator/
 SMLParser/
 SMLUI/
+Server/
 VoxelEngine/
+build/
 sms_kotlin/
 sms_cpp/

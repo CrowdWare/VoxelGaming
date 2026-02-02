@@ -1,3 +1,0 @@
-rotation_controls_test 14 0
----
-rotation_controls_test
