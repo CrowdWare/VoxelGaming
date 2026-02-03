@@ -8,7 +8,7 @@ Software should run on Windows, Mac and Linux
 ## Use Cases
 
 ## Tasks
-- [ ] tasks/player_startpoint.md
+- [x] tasks/player_startpoint.md
 - [ ] tasks/physics_character_controller.md
 
   

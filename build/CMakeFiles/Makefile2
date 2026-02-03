@@ -228,12 +228,12 @@ SMLUI/CMakeFiles/SMLUI.dir/clean:
 VoxelEngine/CMakeFiles/VoxelEngine.dir/all:
 	$(MAKE) $(MAKESILENT) -f VoxelEngine/CMakeFiles/VoxelEngine.dir/build.make VoxelEngine/CMakeFiles/VoxelEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f VoxelEngine/CMakeFiles/VoxelEngine.dir/build.make VoxelEngine/CMakeFiles/VoxelEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=25,26,27,28 "Built target VoxelEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=25,26,27,28,29 "Built target VoxelEngine"
 .PHONY : VoxelEngine/CMakeFiles/VoxelEngine.dir/all
 
 # Build rule for subdir invocation for target.
 VoxelEngine/CMakeFiles/VoxelEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/art/SourceCode/VoxelGaming/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/art/SourceCode/VoxelGaming/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 VoxelEngine/CMakeFiles/VoxelEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/art/SourceCode/VoxelGaming/build/CMakeFiles 0
 .PHONY : VoxelEngine/CMakeFiles/VoxelEngine.dir/rule
@@ -263,7 +263,7 @@ RaidBuilder/CMakeFiles/RaidBuilder.dir/all: RaidBuilder/CMakeFiles/BakeBlocks.di
 
 # Build rule for subdir invocation for target.
 RaidBuilder/CMakeFiles/RaidBuilder.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/art/SourceCode/VoxelGaming/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/art/SourceCode/VoxelGaming/build/CMakeFiles 26
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RaidBuilder/CMakeFiles/RaidBuilder.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/art/SourceCode/VoxelGaming/build/CMakeFiles 0
 .PHONY : RaidBuilder/CMakeFiles/RaidBuilder.dir/rule
@@ -370,7 +370,7 @@ RaidSimulator/CMakeFiles/RaidSimulator.dir/all: RaidSimulator/CMakeFiles/RaidSim
 
 # Build rule for subdir invocation for target.
 RaidSimulator/CMakeFiles/RaidSimulator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/art/SourceCode/VoxelGaming/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/art/SourceCode/VoxelGaming/build/CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RaidSimulator/CMakeFiles/RaidSimulator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/art/SourceCode/VoxelGaming/build/CMakeFiles 0
 .PHONY : RaidSimulator/CMakeFiles/RaidSimulator.dir/rule
