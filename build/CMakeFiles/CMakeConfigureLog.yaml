@@ -2,18 +2,404 @@
 ---
 events:
   -
-    kind: "message-v1"
+    kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
       - "CMakeLists.txt:2 (project)"
-    message: |
-      The system is: Linux - 6.17.9-76061709-generic - x86_64
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+    searched_directories:
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/uname"
+      - "/Users/art/.wasmtime/bin/uname"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/uname"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/uname"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/uname"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/uname"
+      - "/opt/local/bin/uname"
+      - "/opt/local/sbin/uname"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/uname"
+      - "/usr/local/bin/uname"
+      - "/System/Cryptexes/App/usr/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Darwin - 24.4.0 - arm64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+    searched_directories:
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/gmake"
+      - "/Users/art/.wasmtime/bin/gmake"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/gmake"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/gmake"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/gmake"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/gmake"
+      - "/opt/local/bin/gmake"
+      - "/opt/local/sbin/gmake"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/gmake"
+      - "/usr/local/bin/gmake"
+      - "/System/Cryptexes/App/usr/bin/gmake"
+      - "/usr/bin/gmake"
+      - "/bin/gmake"
+      - "/usr/sbin/gmake"
+      - "/sbin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/gmake"
+      - "/opt/X11/bin/gmake"
+      - "/Library/Apple/usr/bin/gmake"
+      - "/usr/local/share/dotnet/gmake"
+      - "/Users/art/.dotnet/tools/gmake"
+      - "/usr/local/go/bin/gmake"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/gmake"
+      - "/Users/art/.cargo/bin/gmake"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/gmake"
+      - "/opt/homebrew/bin/gmake"
+      - "/Users/art/go/bin/gmake"
+      - "/Users/art/Library/Python/3.9/bin/gmake"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/gmake"
+      - "/Users/art/.lmstudio/bin/gmake"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/make"
+      - "/Users/art/.wasmtime/bin/make"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/make"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/make"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/make"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/make"
+      - "/opt/local/bin/make"
+      - "/opt/local/sbin/make"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/make"
+      - "/usr/local/bin/make"
+      - "/System/Cryptexes/App/usr/bin/make"
+    found: "/usr/bin/make"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "g++"
+      - "cl"
+      - "bcc"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+    searched_directories:
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/c++"
+      - "/Users/art/.wasmtime/bin/c++"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/c++"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/c++"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/c++"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/c++"
+      - "/opt/local/bin/c++"
+      - "/opt/local/sbin/c++"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/c++"
+      - "/usr/local/bin/c++"
+      - "/System/Cryptexes/App/usr/bin/c++"
+    found: "/usr/bin/c++"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/opt/homebrew/share/cmake/Modules/"
+    found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
@@ -27,250 +413,2373 @@ events:
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
-      The CXX compiler identification is GNU, found in:
-        /home/art/SourceCode/VoxelGaming/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      The CXX compiler identification is AppleClang, found in:
+        /Users/art/SourceCode/VoxelGaming/build/CMakeFiles/4.2.1/CompilerIdCXX/a.out
       
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:290 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler apple sysroot: "/usr/bin/c++" "-E" "apple-sdk.cpp"
+        # 1 "apple-sdk.cpp"
+        # 1 "<built-in>" 1
+        # 1 "<built-in>" 3
+        # 439 "<built-in>" 3
+        # 1 "<command line>" 1
+        # 1 "<built-in>" 2
+        # 1 "apple-sdk.cpp" 2
+        # 1 "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 1 3 4
+        # 89 "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 1 "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
+        # 90 "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 1 "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h" 1 3 4
+        # 91 "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 207 "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 1 "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h" 1 3 4
+        # 177 "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h" 3 4
+        # 1 "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 1 3 4
+        # 178 "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 1 "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 1 3 4
+        # 179 "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 208 "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 2 "apple-sdk.cpp" 2
+        
+        
+      Found apple sysroot: /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+    found: "/usr/bin/ar"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+    found: "/usr/bin/ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+    found: "/usr/bin/strip"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+    found: "/usr/bin/ld"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+    found: "/usr/bin/nm"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+    found: "/usr/bin/objdump"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+    searched_directories:
+      - "/usr/bin/objcopy"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/objcopy"
+      - "/Users/art/.wasmtime/bin/objcopy"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/objcopy"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/objcopy"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/objcopy"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/objcopy"
+      - "/opt/local/bin/objcopy"
+      - "/opt/local/sbin/objcopy"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/objcopy"
+      - "/usr/local/bin/objcopy"
+      - "/System/Cryptexes/App/usr/bin/objcopy"
+      - "/bin/objcopy"
+      - "/usr/sbin/objcopy"
+      - "/sbin/objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objcopy"
+      - "/opt/X11/bin/objcopy"
+      - "/Library/Apple/usr/bin/objcopy"
+      - "/usr/local/share/dotnet/objcopy"
+      - "/Users/art/.dotnet/tools/objcopy"
+      - "/usr/local/go/bin/objcopy"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/objcopy"
+      - "/Users/art/.cargo/bin/objcopy"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/objcopy"
+      - "/opt/homebrew/bin/objcopy"
+      - "/Users/art/go/bin/objcopy"
+      - "/Users/art/Library/Python/3.9/bin/objcopy"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/objcopy"
+      - "/Users/art/.lmstudio/bin/objcopy"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+    searched_directories:
+      - "/usr/bin/readelf"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/readelf"
+      - "/Users/art/.wasmtime/bin/readelf"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/readelf"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/readelf"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/readelf"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/readelf"
+      - "/opt/local/bin/readelf"
+      - "/opt/local/sbin/readelf"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/readelf"
+      - "/usr/local/bin/readelf"
+      - "/System/Cryptexes/App/usr/bin/readelf"
+      - "/bin/readelf"
+      - "/usr/sbin/readelf"
+      - "/sbin/readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/readelf"
+      - "/opt/X11/bin/readelf"
+      - "/Library/Apple/usr/bin/readelf"
+      - "/usr/local/share/dotnet/readelf"
+      - "/Users/art/.dotnet/tools/readelf"
+      - "/usr/local/go/bin/readelf"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/readelf"
+      - "/Users/art/.cargo/bin/readelf"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/readelf"
+      - "/opt/homebrew/bin/readelf"
+      - "/Users/art/go/bin/readelf"
+      - "/Users/art/Library/Python/3.9/bin/readelf"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/readelf"
+      - "/Users/art/.lmstudio/bin/readelf"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+    searched_directories:
+      - "/usr/bin/dlltool"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/dlltool"
+      - "/Users/art/.wasmtime/bin/dlltool"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/dlltool"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/dlltool"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/dlltool"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/dlltool"
+      - "/opt/local/bin/dlltool"
+      - "/opt/local/sbin/dlltool"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/System/Cryptexes/App/usr/bin/dlltool"
+      - "/bin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/sbin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/dlltool"
+      - "/opt/X11/bin/dlltool"
+      - "/Library/Apple/usr/bin/dlltool"
+      - "/usr/local/share/dotnet/dlltool"
+      - "/Users/art/.dotnet/tools/dlltool"
+      - "/usr/local/go/bin/dlltool"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/dlltool"
+      - "/Users/art/.cargo/bin/dlltool"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/dlltool"
+      - "/opt/homebrew/bin/dlltool"
+      - "/Users/art/go/bin/dlltool"
+      - "/Users/art/Library/Python/3.9/bin/dlltool"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/dlltool"
+      - "/Users/art/.lmstudio/bin/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+    searched_directories:
+      - "/usr/bin/addr2line"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/addr2line"
+      - "/Users/art/.wasmtime/bin/addr2line"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/addr2line"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/addr2line"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/addr2line"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/addr2line"
+      - "/opt/local/bin/addr2line"
+      - "/opt/local/sbin/addr2line"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/addr2line"
+      - "/usr/local/bin/addr2line"
+      - "/System/Cryptexes/App/usr/bin/addr2line"
+      - "/bin/addr2line"
+      - "/usr/sbin/addr2line"
+      - "/sbin/addr2line"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/addr2line"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/addr2line"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/addr2line"
+      - "/opt/X11/bin/addr2line"
+      - "/Library/Apple/usr/bin/addr2line"
+      - "/usr/local/share/dotnet/addr2line"
+      - "/Users/art/.dotnet/tools/addr2line"
+      - "/usr/local/go/bin/addr2line"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/addr2line"
+      - "/Users/art/.cargo/bin/addr2line"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/addr2line"
+      - "/opt/homebrew/bin/addr2line"
+      - "/Users/art/go/bin/addr2line"
+      - "/Users/art/Library/Python/3.9/bin/addr2line"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/addr2line"
+      - "/Users/art/.lmstudio/bin/addr2line"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+    searched_directories:
+      - "/usr/bin/tapi"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/tapi"
+      - "/Users/art/.wasmtime/bin/tapi"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/tapi"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/tapi"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/tapi"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/tapi"
+      - "/opt/local/bin/tapi"
+      - "/opt/local/sbin/tapi"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/System/Cryptexes/App/usr/bin/tapi"
+      - "/bin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
+      - "/opt/X11/bin/tapi"
+      - "/Library/Apple/usr/bin/tapi"
+      - "/usr/local/share/dotnet/tapi"
+      - "/Users/art/.dotnet/tools/tapi"
+      - "/usr/local/go/bin/tapi"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/tapi"
+      - "/Users/art/.cargo/bin/tapi"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/tapi"
+      - "/opt/homebrew/bin/tapi"
+      - "/Users/art/go/bin/tapi"
+      - "/Users/art/Library/Python/3.9/bin/tapi"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/tapi"
+      - "/Users/art/.lmstudio/bin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake:76 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:32 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_INSTALL_NAME_TOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "install_name_tool"
+    candidate_directories:
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+    searched_directories:
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/install_name_tool"
+      - "/Users/art/.wasmtime/bin/install_name_tool"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/install_name_tool"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/install_name_tool"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/install_name_tool"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/install_name_tool"
+      - "/opt/local/bin/install_name_tool"
+      - "/opt/local/sbin/install_name_tool"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/install_name_tool"
+      - "/usr/local/bin/install_name_tool"
+      - "/System/Cryptexes/App/usr/bin/install_name_tool"
+    found: "/usr/bin/install_name_tool"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/art/SourceCode/VoxelGaming/build/CMakeFiles/CMakeScratch/TryCompile-IsOCqj"
-      binary: "/home/art/SourceCode/VoxelGaming/build/CMakeFiles/CMakeScratch/TryCompile-IsOCqj"
+      source: "/Users/art/SourceCode/VoxelGaming/build/CMakeFiles/CMakeScratch/TryCompile-AmriRU"
+      binary: "/Users/art/SourceCode/VoxelGaming/build/CMakeFiles/CMakeScratch/TryCompile-AmriRU"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
       CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/art/SourceCode/VoxelGaming/build/CMakeFiles/CMakeScratch/TryCompile-IsOCqj'
+        Change Dir: '/Users/art/SourceCode/VoxelGaming/build/CMakeFiles/CMakeScratch/TryCompile-AmriRU'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b96e8/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_b96e8.dir/build.make CMakeFiles/cmTC_b96e8.dir/build
-        gmake[1]: Entering directory '/home/art/SourceCode/VoxelGaming/build/CMakeFiles/CMakeScratch/TryCompile-IsOCqj'
-        Building CXX object CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
-        Using built-in specs.
-        COLLECT_GCC=/usr/bin/c++
-        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
-        OFFLOAD_TARGET_DEFAULT=1
-        Target: x86_64-linux-gnu
-        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7125b/fast
+        /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7125b.dir/build.make CMakeFiles/cmTC_7125b.dir/build
+        Building CXX object CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.4.0
         Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b96e8.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b96e8.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccfX8JRS.s
-        GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
-        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"
-        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        InstalledDir: /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+        ignoring nonexistent directory "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
+         "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles/CMakeScratch/TryCompile-AmriRU -resource-dir /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles/CMakeScratch/TryCompile-AmriRU -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.4.0
+        ignoring nonexistent directory "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
+        ignoring nonexistent directory "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
         #include "..." search starts here:
         #include <...> search starts here:
-         /usr/include/c++/13
-         /usr/include/x86_64-linux-gnu/c++/13
-         /usr/include/c++/13/backward
-         /usr/lib/gcc/x86_64-linux-gnu/13/include
          /usr/local/include
-         /usr/include/x86_64-linux-gnu
-         /usr/include
+         /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1
+         /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include
+         /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
+         /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        Compiler executable checksum: c81c05345ce537099dafd5580045814a
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b96e8.dir/'
-         as -v --64 -o CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccfX8JRS.s
-        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
-        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_b96e8
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b96e8.dir/link.txt --verbose=1
-        /usr/bin/c++  -v CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b96e8 
-        Using built-in specs.
-        COLLECT_GCC=/usr/bin/c++
-        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
-        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
-        OFFLOAD_TARGET_DEFAULT=1
-        Target: x86_64-linux-gnu
-        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Linking CXX executable cmTC_7125b
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7125b.dir/link.txt --verbose=1
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.4.0
         Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
-        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b96e8' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b96e8.'
-         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfyCw1M.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b96e8 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b96e8' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b96e8.'
-        gmake[1]: Leaving directory '/home/art/SourceCode/VoxelGaming/build/CMakeFiles/CMakeScratch/TryCompile-IsOCqj'
+        InstalledDir: /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.2 -syslibroot /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_7125b -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 23:52:02 Dec  5 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+        Library search paths:
+        	/usr/local/lib
+        	/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib
+        	/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift
+        Framework search paths:
+        	/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
+        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7125b
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
-      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:122 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/usr/include/c++/13]
-          add: [/usr/include/x86_64-linux-gnu/c++/13]
-          add: [/usr/include/c++/13/backward]
-          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
           add: [/usr/local/include]
-          add: [/usr/include/x86_64-linux-gnu]
-          add: [/usr/include]
+          add: [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1]
+          add: [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+          add: [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+          add: [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
         end of search list found
-        collapse include dir [/usr/include/c++/13] ==> [/usr/include/c++/13]
-        collapse include dir [/usr/include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
-        collapse include dir [/usr/include/c++/13/backward] ==> [/usr/include/c++/13/backward]
-        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
         collapse include dir [/usr/local/include] ==> [/usr/local/include]
-        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
-        collapse include dir [/usr/include] ==> [/usr/include]
-        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+        collapse include dir [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1] ==> [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1]
+        collapse include dir [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include] ==> [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        collapse include dir [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include] ==> [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+        collapse include dir [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        implicit include dirs: [/usr/local/include;/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1;/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include;/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include;/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
-      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/art/SourceCode/VoxelGaming/build/CMakeFiles/CMakeScratch/TryCompile-IsOCqj']
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/Users/art/SourceCode/VoxelGaming/build/CMakeFiles/CMakeScratch/TryCompile-AmriRU']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b96e8/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_b96e8.dir/build.make CMakeFiles/cmTC_b96e8.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/art/SourceCode/VoxelGaming/build/CMakeFiles/CMakeScratch/TryCompile-IsOCqj']
-        ignore line: [Building CXX object CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/c++]
-        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
-        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-        ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7125b/fast]
+        ignore line: [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7125b.dir/build.make CMakeFiles/cmTC_7125b.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-darwin24.4.0]
         ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b96e8.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_b96e8.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccfX8JRS.s]
-        ignore line: [GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
-        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
-        ignore line: []
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"]
-        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [InstalledDir: /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ignoring nonexistent directory "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"]
+        ignore line: [ "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles/CMakeScratch/TryCompile-AmriRU -resource-dir /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles/CMakeScratch/TryCompile-AmriRU -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.4.0]
+        ignore line: [ignoring nonexistent directory "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /usr/include/c++/13]
-        ignore line: [ /usr/include/x86_64-linux-gnu/c++/13]
-        ignore line: [ /usr/include/c++/13/backward]
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
         ignore line: [ /usr/local/include]
-        ignore line: [ /usr/include/x86_64-linux-gnu]
-        ignore line: [ /usr/include]
+        ignore line: [ /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1]
+        ignore line: [ /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        ignore line: [ /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+        ignore line: [ /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        ignore line: [ /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: c81c05345ce537099dafd5580045814a]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b96e8.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccfX8JRS.s]
-        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
-        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_b96e8]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b96e8.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b96e8 ]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/c++]
-        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
-        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
-        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-        ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Linking CXX executable cmTC_7125b]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7125b.dir/link.txt --verbose=1]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-darwin24.4.0]
         ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
-        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b96e8' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b96e8.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccfyCw1M.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b96e8 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
-          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
-          arg [-plugin] ==> ignore
-          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
-          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccfyCw1M.res] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [--build-id] ==> ignore
-          arg [--eh-frame-hdr] ==> ignore
-          arg [-m] ==> ignore
-          arg [elf_x86_64] ==> ignore
-          arg [--hash-style=gnu] ==> ignore
-          arg [--as-needed] ==> ignore
-          arg [-dynamic-linker] ==> ignore
-          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-          arg [-pie] ==> ignore
-          arg [-znow] ==> ignore
-          arg [-zrelro] ==> ignore
+        ignore line: [InstalledDir: /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        link line: [ "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.2 -syslibroot /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_7125b -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [15.0.0] ==> ignore
+          arg [15.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_b96e8] ==> ignore
-          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
-          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-          arg [-L/lib/../lib] ==> dir [/lib/../lib]
-          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
-          arg [CMakeFiles/cmTC_b96e8.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-          arg [-lstdc++] ==> lib [stdc++]
-          arg [-lm] ==> lib [m]
-          arg [-lgcc_s] ==> lib [gcc_s]
-          arg [-lgcc] ==> lib [gcc]
-          arg [-lc] ==> lib [c]
-          arg [-lgcc_s] ==> lib [gcc_s]
-          arg [-lgcc] ==> lib [gcc]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
-        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-        collapse library dir [/lib/../lib] ==> [/lib]
-        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
-        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
-        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
-        implicit fwks: []
+          arg [cmTC_7125b] ==> ignore
+          arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_7125b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'CXX': /Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+        Library search paths: [;/usr/local/lib;/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib;/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift]
+        Framework search paths: [;/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+        collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+        collapse library dir [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib] ==> [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib]
+        collapse library dir [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift] ==> [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift]
+        collapse framework dir [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks] ==> [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        implicit libs: [c++]
+        implicit objs: []
+        implicit dirs: [/usr/local/lib;/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib;/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift]
+        implicit fwks: [/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
       
       
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+      BUILD 23:52:02 Dec  5 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindVulkan.cmake:392 (find_path)"
+      - "SMLUI/CMakeLists.txt:4 (find_package)"
+    mode: "path"
+    variable: "Vulkan_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "vulkan/vulkan.h"
+    candidate_directories:
+      - "/Users/art/VulkanSDK/1.4.335.1/include/"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/include/"
+      - "/opt/homebrew/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/sw/include/"
+      - "/sw/"
+      - "/opt/local/include/"
+      - "/opt/local/"
+      - "/usr/include/X11/"
+      - "/Users/art/Library/Frameworks/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/Network/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+    searched_directories:
+      - "/Users/art/VulkanSDK/1.4.335.1/include/vulkan.framework/Headers/vulkan.h"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Users/art/.wasmtime/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/vulkan.framework/Headers/vulkan.h"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/vulkan.framework/Headers/vulkan.h"
+      - "/opt/local/bin/vulkan.framework/Headers/vulkan.h"
+      - "/opt/local/sbin/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/vulkan.framework/Headers/vulkan.h"
+      - "/usr/local/bin/vulkan.framework/Headers/vulkan.h"
+      - "/System/Cryptexes/App/usr/bin/vulkan.framework/Headers/vulkan.h"
+      - "/usr/bin/vulkan.framework/Headers/vulkan.h"
+      - "/bin/vulkan.framework/Headers/vulkan.h"
+      - "/usr/sbin/vulkan.framework/Headers/vulkan.h"
+      - "/sbin/vulkan.framework/Headers/vulkan.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/vulkan.framework/Headers/vulkan.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/vulkan.framework/Headers/vulkan.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/vulkan.framework/Headers/vulkan.h"
+      - "/opt/X11/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Apple/usr/bin/vulkan.framework/Headers/vulkan.h"
+      - "/usr/local/share/dotnet/vulkan.framework/Headers/vulkan.h"
+      - "/Users/art/.dotnet/tools/vulkan.framework/Headers/vulkan.h"
+      - "/usr/local/go/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/vulkan.framework/Headers/vulkan.h"
+      - "/Users/art/.cargo/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/vulkan.framework/Headers/vulkan.h"
+      - "/opt/homebrew/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Users/art/go/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Users/art/Library/Python/3.9/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Users/art/.lmstudio/bin/vulkan.framework/Headers/vulkan.h"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/vulkan.framework/Headers/vulkan.h"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/vulkan.framework/Headers/vulkan.h"
+      - "/opt/homebrew/include/vulkan.framework/Headers/vulkan.h"
+      - "/opt/homebrew/vulkan.framework/Headers/vulkan.h"
+      - "/usr/local/include/vulkan.framework/Headers/vulkan.h"
+      - "/usr/local/vulkan.framework/Headers/vulkan.h"
+      - "/usr/include/vulkan.framework/Headers/vulkan.h"
+      - "/usr/vulkan.framework/Headers/vulkan.h"
+      - "/include/vulkan.framework/Headers/vulkan.h"
+      - "/usr/X11R6/include/vulkan.framework/Headers/vulkan.h"
+      - "/usr/X11R6/vulkan.framework/Headers/vulkan.h"
+      - "/usr/pkg/include/vulkan.framework/Headers/vulkan.h"
+      - "/usr/pkg/vulkan.framework/Headers/vulkan.h"
+      - "/opt/include/vulkan.framework/Headers/vulkan.h"
+      - "/opt/vulkan.framework/Headers/vulkan.h"
+      - "/sw/include/vulkan.framework/Headers/vulkan.h"
+      - "/sw/vulkan.framework/Headers/vulkan.h"
+      - "/opt/local/include/vulkan.framework/Headers/vulkan.h"
+      - "/opt/local/vulkan.framework/Headers/vulkan.h"
+      - "/usr/include/X11/vulkan.framework/Headers/vulkan.h"
+      - "/Users/art/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Network/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/System/Library/Frameworks/vulkan.framework/Headers/vulkan.h"
+      - "/Users/art/VulkanSDK/1.4.335.1/include/vulkan/vulkan.h"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/vulkan/vulkan.h"
+      - "/Users/art/.wasmtime/bin/vulkan/vulkan.h"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/vulkan/vulkan.h"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/vulkan/vulkan.h"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/vulkan/vulkan.h"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/vulkan/vulkan.h"
+      - "/opt/local/bin/vulkan/vulkan.h"
+      - "/opt/local/sbin/vulkan/vulkan.h"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/vulkan/vulkan.h"
+      - "/usr/local/bin/vulkan/vulkan.h"
+      - "/System/Cryptexes/App/usr/bin/vulkan/vulkan.h"
+      - "/usr/bin/vulkan/vulkan.h"
+      - "/bin/vulkan/vulkan.h"
+      - "/usr/sbin/vulkan/vulkan.h"
+      - "/sbin/vulkan/vulkan.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/vulkan/vulkan.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/vulkan/vulkan.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/vulkan/vulkan.h"
+      - "/opt/X11/bin/vulkan/vulkan.h"
+      - "/Library/Apple/usr/bin/vulkan/vulkan.h"
+      - "/usr/local/share/dotnet/vulkan/vulkan.h"
+      - "/Users/art/.dotnet/tools/vulkan/vulkan.h"
+      - "/usr/local/go/bin/vulkan/vulkan.h"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/vulkan/vulkan.h"
+      - "/Users/art/.cargo/bin/vulkan/vulkan.h"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/vulkan/vulkan.h"
+      - "/opt/homebrew/bin/vulkan/vulkan.h"
+      - "/Users/art/go/bin/vulkan/vulkan.h"
+      - "/Users/art/Library/Python/3.9/bin/vulkan/vulkan.h"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/vulkan/vulkan.h"
+      - "/Users/art/.lmstudio/bin/vulkan/vulkan.h"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/vulkan/vulkan.h"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/vulkan/vulkan.h"
+    found: "/opt/homebrew/include/"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindVulkan.cmake:399 (find_library)"
+      - "SMLUI/CMakeLists.txt:4 (find_package)"
+    mode: "library"
+    variable: "Vulkan_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "vulkan"
+    candidate_directories:
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/opt/X11/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/lib/"
+      - "/opt/homebrew/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/opt/"
+      - "/opt/local/lib/"
+      - "/opt/local/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+    searched_directories:
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/opt/X11/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+    found: "/opt/homebrew/lib/libvulkan.dylib"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindVulkan.cmake:407 (find_program)"
+      - "SMLUI/CMakeLists.txt:4 (find_package)"
+    mode: "program"
+    variable: "Vulkan_GLSLC_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "glslc"
+    candidate_directories:
+      - "/Users/art/VulkanSDK/1.4.335.1/bin/"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/bin/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/sbin/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/homebrew/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+      - "/sw/bin/"
+      - "/sw/sbin/"
+      - "/sw/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/opt/local/"
+      - "/Users/art/Applications/"
+      - "/Applications/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Applications/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Applications/"
+    searched_directories:
+      - "/Users/art/VulkanSDK/1.4.335.1/bin/glslc"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/glslc"
+      - "/Users/art/.wasmtime/bin/glslc"
+    found: "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/glslc"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_APPBUNDLE_PATH:
+        - "/Users/art/Applications"
+        - "/Applications"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Applications"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Applications"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindVulkan.cmake:415 (find_program)"
+      - "SMLUI/CMakeLists.txt:4 (find_package)"
+    mode: "program"
+    variable: "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "glslangValidator"
+    candidate_directories:
+      - "/Users/art/VulkanSDK/1.4.335.1/bin/"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/bin/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/sbin/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/homebrew/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+      - "/sw/bin/"
+      - "/sw/sbin/"
+      - "/sw/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/opt/local/"
+      - "/Users/art/Applications/"
+      - "/Applications/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Applications/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Applications/"
+    searched_directories:
+      - "/Users/art/VulkanSDK/1.4.335.1/bin/glslangValidator"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/glslangValidator"
+      - "/Users/art/.wasmtime/bin/glslangValidator"
+    found: "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/glslangValidator"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_APPBUNDLE_PATH:
+        - "/Users/art/Applications"
+        - "/Applications"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Applications"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Applications"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake:517 (find_program)"
+      - "SMLUI/CMakeLists.txt:5 (find_package)"
+    mode: "program"
+    variable: "PKG_CONFIG_EXECUTABLE"
+    description: "pkg-config executable"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "pkg-config"
+      - "pkgconf"
+    candidate_directories:
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/"
+      - "/Users/art/.wasmtime/bin/"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/X11/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/art/.dotnet/tools/"
+      - "/usr/local/go/bin/"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/"
+      - "/Users/art/.cargo/bin/"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/"
+      - "/opt/homebrew/bin/"
+      - "/Users/art/go/bin/"
+      - "/Users/art/Library/Python/3.9/bin/"
+      - "/Volumes/LaCie/SourceCode/miniconda3/bin/"
+      - "/Users/art/.lmstudio/bin/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/bin/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/sbin/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/homebrew/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+      - "/sw/bin/"
+      - "/sw/sbin/"
+      - "/sw/"
+      - "/opt/local/bin/"
+      - "/opt/local/sbin/"
+      - "/opt/local/"
+      - "/Users/art/Applications/"
+      - "/Applications/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Applications/"
+      - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Applications/"
+    searched_directories:
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/pkg-config"
+      - "/Users/art/.sdkman/candidates/kotlin/current/bin/pkgconf"
+      - "/Users/art/.wasmtime/bin/pkg-config"
+      - "/Users/art/.wasmtime/bin/pkgconf"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/pkg-config"
+      - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin/pkgconf"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/pkg-config"
+      - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin/pkgconf"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/pkg-config"
+      - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin/pkgconf"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/pkg-config"
+      - "/Library/Frameworks/Python.framework/Versions/3.11/bin/pkgconf"
+      - "/opt/local/bin/pkg-config"
+      - "/opt/local/bin/pkgconf"
+      - "/opt/local/sbin/pkg-config"
+      - "/opt/local/sbin/pkgconf"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/pkg-config"
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/pkgconf"
+      - "/usr/local/bin/pkg-config"
+      - "/usr/local/bin/pkgconf"
+      - "/System/Cryptexes/App/usr/bin/pkg-config"
+      - "/System/Cryptexes/App/usr/bin/pkgconf"
+      - "/usr/bin/pkg-config"
+      - "/usr/bin/pkgconf"
+      - "/bin/pkg-config"
+      - "/bin/pkgconf"
+      - "/usr/sbin/pkg-config"
+      - "/usr/sbin/pkgconf"
+      - "/sbin/pkg-config"
+      - "/sbin/pkgconf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/pkg-config"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/pkgconf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/pkg-config"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/pkgconf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/pkg-config"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/pkgconf"
+      - "/opt/X11/bin/pkg-config"
+      - "/opt/X11/bin/pkgconf"
+      - "/Library/Apple/usr/bin/pkg-config"
+      - "/Library/Apple/usr/bin/pkgconf"
+      - "/usr/local/share/dotnet/pkg-config"
+      - "/usr/local/share/dotnet/pkgconf"
+      - "/Users/art/.dotnet/tools/pkg-config"
+      - "/Users/art/.dotnet/tools/pkgconf"
+      - "/usr/local/go/bin/pkg-config"
+      - "/usr/local/go/bin/pkgconf"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/pkg-config"
+      - "/Library/Frameworks/Mono.framework/Versions/Current/Commands/pkgconf"
+      - "/Users/art/.cargo/bin/pkg-config"
+      - "/Users/art/.cargo/bin/pkgconf"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/pkg-config"
+      - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts/pkgconf"
+    found: "/opt/homebrew/bin/pkg-config"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_APPBUNDLE_PATH:
+        - "/Users/art/Applications"
+        - "/Applications"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Applications"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Applications"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake:761 (find_library)"
+      - "/opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake:811 (_pkg_find_libs)"
+      - "/opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake:1149 (_pkg_recalculate)"
+      - "/opt/homebrew/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
+      - "SMLUI/CMakeLists.txt:6 (pkg_check_modules)"
+    mode: "library"
+    variable: "pkgcfg_lib_GLFW_glfw"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "glfw"
+    candidate_directories:
+      - "/opt/homebrew/Cellar/glfw/3.4/lib/"
+    found: "/opt/homebrew/Cellar/glfw/3.4/lib/libglfw.dylib"
+    search_context:
+      ENV{PATH}:
+        - "/Users/art/.sdkman/candidates/kotlin/current/bin"
+        - "/Users/art/.wasmtime/bin"
+        - "/Users/art/VulkanSDK/1.4.335.1/macOS/bin"
+        - "/opt/homebrew/Caskroom/graalvm-jdk17/17.0.12/graalvm-jdk-17.0.12+8.1/bin"
+        - "/Library/Java/JavaVirtualMachines/graalvm-jdk-17/Contents/Home/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.11/bin"
+        - "/opt/local/bin"
+        - "/opt/local/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/usr/local/go/bin"
+        - "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
+        - "/Users/art/.cargo/bin"
+        - "/Users/art/Library/Application Support/JetBrains/Toolbox/scripts"
+        - "/opt/homebrew/bin"
+        - "/Users/art/go/bin"
+        - "/Users/art/Library/Python/3.9/bin"
+        - "/Volumes/LaCie/SourceCode/miniconda3/bin"
+        - "/Users/art/.lmstudio/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks"
+        - "/Volumes/LaCie/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
 ...
