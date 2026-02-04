@@ -1,4 +1,6 @@
-# Goal
+# RaidBuilder character controller
+
+## Goal
 
 Builder uses the same CharacterController implementation as RaidSimulator, so level building can be tested with real physics.
 
