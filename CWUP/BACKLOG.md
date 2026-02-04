@@ -76,5 +76,7 @@
 ## Tasks
 - [x] tasks/player_startpoint.md
 - [x] tasks/physics_character_controller.md
+- [ ] tasks/builder_startpoint.md
+- [ ] tasks/builder_character_controller.md
 
   

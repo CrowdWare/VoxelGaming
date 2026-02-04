@@ -1,5 +1,3 @@
 # TODO
 
-- Iterations
-- Increments
-- Evaluation
+Have a look into CWUP/BACKLOG.md
