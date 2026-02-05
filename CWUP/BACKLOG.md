@@ -81,7 +81,7 @@
 - [x] tasks/builder_character_controller.md
 - [x] tasks/repair_ui.md
 - [x] tasks/menu.md
-- [ ] tasks/save_chunked.md
+- [x] tasks/save_chunked.md
 - [ ] tasks/deterministic_world_loading.md
 - [ ] tasks/animation_clip_library.md
 - [ ] tasks/third_person_controller.md
