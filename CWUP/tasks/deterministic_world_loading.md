@@ -2,28 +2,24 @@
 
 ## Status
 
-Implemented, except for explicit seed handling.
+Implemented: deterministic chunk ordering + optional seed/debug hooks are in place.
 
-Chunk-based loading works correctly across Builder, Server, and Game.
+Chunk-based loading now sorts chunk coordinates/files consistently across Builder, Server, and Game.
 
 ⸻
 
 ## Remaining Scope
 
 1. Optional Deterministic Seed (Future-Proof)
-	•	Introduce a single, explicit world seed
-	•	Initially:
-	•	hardcoded constant or
-	•	level / world metadata
+	•	Implemented via environment variable
+	•	WORLD_SEED (default: 0)
 	•	No procedural generation depends on it yet
 
 ⸻
 
 2. Explicit Chunk Load Order (Audit)
-	•	Verify chunk loading order is:
-	•	explicitly defined
-	•	not dependent on container iteration or timing
-	•	Current behavior is assumed deterministic but should be documented / locked
+	•	Chunk files/coords are explicitly sorted by (x, y, z)
+	•	No dependence on container iteration or timing
 
 ⸻
 
@@ -31,7 +27,7 @@ Chunk-based loading works correctly across Builder, Server, and Game.
 	•	Builder, Server, and Game:
 	•	load identical chunk sets
 	•	use identical coordinates
-	•	follow the same load order
+	•	follow the same sorted load order
 	•	Visual / debug-only differences allowed
 
 ⸻
@@ -41,6 +37,7 @@ Chunk-based loading works correctly across Builder, Server, and Game.
 	•	chunk coordinates
 	•	load index (ordinal)
 	•	optional seed value
+	•	Enabled via CHUNK_DEBUG=1 (or true/yes/on)
 	•	Used only for regression testing and bug reports
 
 ⸻
@@ -50,6 +47,7 @@ Chunk-based loading works correctly across Builder, Server, and Game.
 	•	Builder, Server, and Game behave identically regarding chunk loading
 	•	Deterministic behavior is documented and stable
 	•	Seed support is prepared but not yet required
+	•	Debug log switch exists for regression/bisecting
 
 ⸻
 

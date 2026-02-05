@@ -82,7 +82,7 @@
 - [x] tasks/repair_ui.md
 - [x] tasks/menu.md
 - [x] tasks/save_chunked.md
-- [ ] tasks/deterministic_world_loading.md
+- [x] tasks/deterministic_world_loading.md
 - [ ] tasks/animation_clip_library.md
 - [ ] tasks/third_person_controller.md
 
