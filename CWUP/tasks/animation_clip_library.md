@@ -46,6 +46,19 @@ Each file:
   - companions
   - NPCs
 
+Sample usage (Enemy tile):
+```sml
+Tile {
+    key: "E"
+    name: "Enemy"
+    icon: "res://assets/textures/raid_enemy.png"
+    model: "Assets/characters/Paladin.glb"
+    animation: "Assets/animations/idle.glb"
+    material: texture
+}
+```
+Where `model` is the mesh and `animation` is a .glb file that includes the animation data.
+
 ---
 
 ### 3. Reuse Across Characters

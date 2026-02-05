@@ -301,11 +301,11 @@ VoxelEngine/CMakeFiles/VoxelEngine.dir/clean:
 # Target rules for target RaidBuilder/CMakeFiles/RaidBuilder.dir
 
 # All Build rule for target.
+RaidBuilder/CMakeFiles/RaidBuilder.dir/all: SMLParser/CMakeFiles/SMLParser.dir/all
 RaidBuilder/CMakeFiles/RaidBuilder.dir/all: SMLUI/CMakeFiles/SMLUI.dir/all
 RaidBuilder/CMakeFiles/RaidBuilder.dir/all: VoxelEngine/CMakeFiles/VoxelEngine.dir/all
 RaidBuilder/CMakeFiles/RaidBuilder.dir/all: RaidBuilder/CMakeFiles/Shaders.dir/all
 RaidBuilder/CMakeFiles/RaidBuilder.dir/all: RaidBuilder/CMakeFiles/BakeBlocks.dir/all
-RaidBuilder/CMakeFiles/RaidBuilder.dir/all: SMLParser/CMakeFiles/SMLParser.dir/all
 	$(MAKE) $(MAKESILENT) -f RaidBuilder/CMakeFiles/RaidBuilder.dir/build.make RaidBuilder/CMakeFiles/RaidBuilder.dir/depend
 	$(MAKE) $(MAKESILENT) -f RaidBuilder/CMakeFiles/RaidBuilder.dir/build.make RaidBuilder/CMakeFiles/RaidBuilder.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=5,6,7,8,9 "Built target RaidBuilder"
@@ -434,10 +434,10 @@ RaidBuilder/CMakeFiles/BakeBlocks.dir/clean:
 # Target rules for target RaidSimulator/CMakeFiles/RaidSimulator.dir
 
 # All Build rule for target.
+RaidSimulator/CMakeFiles/RaidSimulator.dir/all: SMLParser/CMakeFiles/SMLParser.dir/all
 RaidSimulator/CMakeFiles/RaidSimulator.dir/all: SMLUI/CMakeFiles/SMLUI.dir/all
 RaidSimulator/CMakeFiles/RaidSimulator.dir/all: VoxelEngine/CMakeFiles/VoxelEngine.dir/all
 RaidSimulator/CMakeFiles/RaidSimulator.dir/all: RaidSimulator/CMakeFiles/RaidSimulatorShaders.dir/all
-RaidSimulator/CMakeFiles/RaidSimulator.dir/all: SMLParser/CMakeFiles/SMLParser.dir/all
 	$(MAKE) $(MAKESILENT) -f RaidSimulator/CMakeFiles/RaidSimulator.dir/build.make RaidSimulator/CMakeFiles/RaidSimulator.dir/depend
 	$(MAKE) $(MAKESILENT) -f RaidSimulator/CMakeFiles/RaidSimulator.dir/build.make RaidSimulator/CMakeFiles/RaidSimulator.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=10,11,12 "Built target RaidSimulator"
