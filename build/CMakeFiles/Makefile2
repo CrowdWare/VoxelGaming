@@ -208,7 +208,7 @@ VoxelEngine/clean: VoxelEngine/CMakeFiles/VoxelEngine.dir/clean
 SMLParser/CMakeFiles/SMLParser.dir/all:
 	$(MAKE) $(MAKESILENT) -f SMLParser/CMakeFiles/SMLParser.dir/build.make SMLParser/CMakeFiles/SMLParser.dir/depend
 	$(MAKE) $(MAKESILENT) -f SMLParser/CMakeFiles/SMLParser.dir/build.make SMLParser/CMakeFiles/SMLParser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=15,16 "Built target SMLParser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=14,15 "Built target SMLParser"
 .PHONY : SMLParser/CMakeFiles/SMLParser.dir/all
 
 # Build rule for subdir invocation for target.
@@ -225,7 +225,7 @@ SMLParser: SMLParser/CMakeFiles/SMLParser.dir/rule
 # codegen rule for target.
 SMLParser/CMakeFiles/SMLParser.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f SMLParser/CMakeFiles/SMLParser.dir/build.make SMLParser/CMakeFiles/SMLParser.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=15,16 "Finished codegen for target SMLParser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=14,15 "Finished codegen for target SMLParser"
 .PHONY : SMLParser/CMakeFiles/SMLParser.dir/codegen
 
 # clean rule for target.
@@ -240,7 +240,7 @@ SMLParser/CMakeFiles/SMLParser.dir/clean:
 SMLUI/CMakeFiles/SMLUI.dir/all: SMLParser/CMakeFiles/SMLParser.dir/all
 	$(MAKE) $(MAKESILENT) -f SMLUI/CMakeFiles/SMLUI.dir/build.make SMLUI/CMakeFiles/SMLUI.dir/depend
 	$(MAKE) $(MAKESILENT) -f SMLUI/CMakeFiles/SMLUI.dir/build.make SMLUI/CMakeFiles/SMLUI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=17,18,19,20,21,22,23,24,25 "Built target SMLUI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=16,17,18,19,20,21,22,23,24 "Built target SMLUI"
 .PHONY : SMLUI/CMakeFiles/SMLUI.dir/all
 
 # Build rule for subdir invocation for target.
@@ -257,7 +257,7 @@ SMLUI: SMLUI/CMakeFiles/SMLUI.dir/rule
 # codegen rule for target.
 SMLUI/CMakeFiles/SMLUI.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f SMLUI/CMakeFiles/SMLUI.dir/build.make SMLUI/CMakeFiles/SMLUI.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=17,18,19,20,21,22,23,24,25 "Finished codegen for target SMLUI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=16,17,18,19,20,21,22,23,24 "Finished codegen for target SMLUI"
 .PHONY : SMLUI/CMakeFiles/SMLUI.dir/codegen
 
 # clean rule for target.
@@ -269,15 +269,15 @@ SMLUI/CMakeFiles/SMLUI.dir/clean:
 # Target rules for target VoxelEngine/CMakeFiles/VoxelEngine.dir
 
 # All Build rule for target.
-VoxelEngine/CMakeFiles/VoxelEngine.dir/all:
+VoxelEngine/CMakeFiles/VoxelEngine.dir/all: SMLParser/CMakeFiles/SMLParser.dir/all
 	$(MAKE) $(MAKESILENT) -f VoxelEngine/CMakeFiles/VoxelEngine.dir/build.make VoxelEngine/CMakeFiles/VoxelEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f VoxelEngine/CMakeFiles/VoxelEngine.dir/build.make VoxelEngine/CMakeFiles/VoxelEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=27,28,29,30,31 "Built target VoxelEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=26,27,28,29,30,31,32 "Built target VoxelEngine"
 .PHONY : VoxelEngine/CMakeFiles/VoxelEngine.dir/all
 
 # Build rule for subdir invocation for target.
 VoxelEngine/CMakeFiles/VoxelEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/art/SourceCode/VoxelGaming/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/art/SourceCode/VoxelGaming/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 VoxelEngine/CMakeFiles/VoxelEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/art/SourceCode/VoxelGaming/build/CMakeFiles 0
 .PHONY : VoxelEngine/CMakeFiles/VoxelEngine.dir/rule
@@ -289,7 +289,7 @@ VoxelEngine: VoxelEngine/CMakeFiles/VoxelEngine.dir/rule
 # codegen rule for target.
 VoxelEngine/CMakeFiles/VoxelEngine.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f VoxelEngine/CMakeFiles/VoxelEngine.dir/build.make VoxelEngine/CMakeFiles/VoxelEngine.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=27,28,29,30,31 "Finished codegen for target VoxelEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=26,27,28,29,30,31,32 "Finished codegen for target VoxelEngine"
 .PHONY : VoxelEngine/CMakeFiles/VoxelEngine.dir/codegen
 
 # clean rule for target.
@@ -308,12 +308,12 @@ RaidBuilder/CMakeFiles/RaidBuilder.dir/all: RaidBuilder/CMakeFiles/Shaders.dir/a
 RaidBuilder/CMakeFiles/RaidBuilder.dir/all: RaidBuilder/CMakeFiles/BakeBlocks.dir/all
 	$(MAKE) $(MAKESILENT) -f RaidBuilder/CMakeFiles/RaidBuilder.dir/build.make RaidBuilder/CMakeFiles/RaidBuilder.dir/depend
 	$(MAKE) $(MAKESILENT) -f RaidBuilder/CMakeFiles/RaidBuilder.dir/build.make RaidBuilder/CMakeFiles/RaidBuilder.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=5,6,7,8,9,10 "Built target RaidBuilder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=5,6,7,8,9 "Built target RaidBuilder"
 .PHONY : RaidBuilder/CMakeFiles/RaidBuilder.dir/all
 
 # Build rule for subdir invocation for target.
 RaidBuilder/CMakeFiles/RaidBuilder.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/art/SourceCode/VoxelGaming/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/art/SourceCode/VoxelGaming/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RaidBuilder/CMakeFiles/RaidBuilder.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/art/SourceCode/VoxelGaming/build/CMakeFiles 0
 .PHONY : RaidBuilder/CMakeFiles/RaidBuilder.dir/rule
@@ -326,7 +326,7 @@ RaidBuilder: RaidBuilder/CMakeFiles/RaidBuilder.dir/rule
 RaidBuilder/CMakeFiles/RaidBuilder.dir/codegen: RaidBuilder/CMakeFiles/Shaders.dir/all
 RaidBuilder/CMakeFiles/RaidBuilder.dir/codegen: RaidBuilder/CMakeFiles/BakeBlocks.dir/all
 	$(MAKE) $(MAKESILENT) -f RaidBuilder/CMakeFiles/RaidBuilder.dir/build.make RaidBuilder/CMakeFiles/RaidBuilder.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=5,6,7,8,9,10 "Finished codegen for target RaidBuilder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=5,6,7,8,9 "Finished codegen for target RaidBuilder"
 .PHONY : RaidBuilder/CMakeFiles/RaidBuilder.dir/codegen
 
 # clean rule for target.
@@ -341,7 +341,7 @@ RaidBuilder/CMakeFiles/RaidBuilder.dir/clean:
 RaidBuilder/CMakeFiles/Shaders.dir/all:
 	$(MAKE) $(MAKESILENT) -f RaidBuilder/CMakeFiles/Shaders.dir/build.make RaidBuilder/CMakeFiles/Shaders.dir/depend
 	$(MAKE) $(MAKESILENT) -f RaidBuilder/CMakeFiles/Shaders.dir/build.make RaidBuilder/CMakeFiles/Shaders.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=26 "Built target Shaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=25 "Built target Shaders"
 .PHONY : RaidBuilder/CMakeFiles/Shaders.dir/all
 
 # Build rule for subdir invocation for target.
@@ -358,7 +358,7 @@ Shaders: RaidBuilder/CMakeFiles/Shaders.dir/rule
 # codegen rule for target.
 RaidBuilder/CMakeFiles/Shaders.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f RaidBuilder/CMakeFiles/Shaders.dir/build.make RaidBuilder/CMakeFiles/Shaders.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=26 "Finished codegen for target Shaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=25 "Finished codegen for target Shaders"
 .PHONY : RaidBuilder/CMakeFiles/Shaders.dir/codegen
 
 # clean rule for target.
@@ -440,12 +440,12 @@ RaidSimulator/CMakeFiles/RaidSimulator.dir/all: VoxelEngine/CMakeFiles/VoxelEngi
 RaidSimulator/CMakeFiles/RaidSimulator.dir/all: RaidSimulator/CMakeFiles/RaidSimulatorShaders.dir/all
 	$(MAKE) $(MAKESILENT) -f RaidSimulator/CMakeFiles/RaidSimulator.dir/build.make RaidSimulator/CMakeFiles/RaidSimulator.dir/depend
 	$(MAKE) $(MAKESILENT) -f RaidSimulator/CMakeFiles/RaidSimulator.dir/build.make RaidSimulator/CMakeFiles/RaidSimulator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=11,12,13 "Built target RaidSimulator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=10,11,12 "Built target RaidSimulator"
 .PHONY : RaidSimulator/CMakeFiles/RaidSimulator.dir/all
 
 # Build rule for subdir invocation for target.
 RaidSimulator/CMakeFiles/RaidSimulator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/art/SourceCode/VoxelGaming/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/art/SourceCode/VoxelGaming/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RaidSimulator/CMakeFiles/RaidSimulator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/art/SourceCode/VoxelGaming/build/CMakeFiles 0
 .PHONY : RaidSimulator/CMakeFiles/RaidSimulator.dir/rule
@@ -457,7 +457,7 @@ RaidSimulator: RaidSimulator/CMakeFiles/RaidSimulator.dir/rule
 # codegen rule for target.
 RaidSimulator/CMakeFiles/RaidSimulator.dir/codegen: RaidSimulator/CMakeFiles/RaidSimulatorShaders.dir/all
 	$(MAKE) $(MAKESILENT) -f RaidSimulator/CMakeFiles/RaidSimulator.dir/build.make RaidSimulator/CMakeFiles/RaidSimulator.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=11,12,13 "Finished codegen for target RaidSimulator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=10,11,12 "Finished codegen for target RaidSimulator"
 .PHONY : RaidSimulator/CMakeFiles/RaidSimulator.dir/codegen
 
 # clean rule for target.
@@ -472,7 +472,7 @@ RaidSimulator/CMakeFiles/RaidSimulator.dir/clean:
 RaidSimulator/CMakeFiles/RaidSimulatorShaders.dir/all:
 	$(MAKE) $(MAKESILENT) -f RaidSimulator/CMakeFiles/RaidSimulatorShaders.dir/build.make RaidSimulator/CMakeFiles/RaidSimulatorShaders.dir/depend
 	$(MAKE) $(MAKESILENT) -f RaidSimulator/CMakeFiles/RaidSimulatorShaders.dir/build.make RaidSimulator/CMakeFiles/RaidSimulatorShaders.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=14 "Built target RaidSimulatorShaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=13 "Built target RaidSimulatorShaders"
 .PHONY : RaidSimulator/CMakeFiles/RaidSimulatorShaders.dir/all
 
 # Build rule for subdir invocation for target.
@@ -489,7 +489,7 @@ RaidSimulatorShaders: RaidSimulator/CMakeFiles/RaidSimulatorShaders.dir/rule
 # codegen rule for target.
 RaidSimulator/CMakeFiles/RaidSimulatorShaders.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f RaidSimulator/CMakeFiles/RaidSimulatorShaders.dir/build.make RaidSimulator/CMakeFiles/RaidSimulatorShaders.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=14 "Finished codegen for target RaidSimulatorShaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/art/SourceCode/VoxelGaming/build/CMakeFiles --progress-num=13 "Finished codegen for target RaidSimulatorShaders"
 .PHONY : RaidSimulator/CMakeFiles/RaidSimulatorShaders.dir/codegen
 
 # clean rule for target.

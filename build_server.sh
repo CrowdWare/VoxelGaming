@@ -3,9 +3,8 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
+echo "Building Ktor server..."
 
-echo "Starting Ktor server..."
-#
 # Use JAVA_HOME when provided; otherwise fall back to the system default Java.
 if [ -n "${JAVA_HOME:-}" ]; then
   export PATH="$JAVA_HOME/bin:$PATH"
@@ -16,14 +15,4 @@ elif command -v /usr/libexec/java_home >/dev/null 2>&1; then
   echo "Using system JAVA_HOME: $JAVA_HOME"
 fi
 
-SERVER_PORT="${SERVER_PORT:-8080}"
-if command -v lsof >/dev/null 2>&1; then
-  if lsof -nP -iTCP:"${SERVER_PORT}" -sTCP:LISTEN >/dev/null 2>&1; then
-    echo "Port ${SERVER_PORT} is already in use:" >&2
-    lsof -nP -iTCP:"${SERVER_PORT}" -sTCP:LISTEN >&2
-    echo "Stop the process above or choose a different port (export SERVER_PORT=... )." >&2
-    exit 1
-  fi
-fi
-
-exec bash -c "cd \"$ROOT_DIR/Server\" && ./gradlew run"
+exec bash -c "cd \"$ROOT_DIR/Server\" && ./gradlew build"
