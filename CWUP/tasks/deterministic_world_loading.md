@@ -69,3 +69,11 @@ No floating-point derived chunk addressing.
 - Reloading the same level produces identical results
 - Builder and Game behave identically regarding world loading
 - No nondeterministic behavior remains in chunk generation/loading  
+
+
+## Known Limitation / Current Issue
+- The server is currently unable to load a dungeon with a size of **34 × 34** blocks.
+- When attempting to load such a dungeon, the server logs:
+  INFO  RaidServer - Serving chunk (0,0,0) with 0 blocks
+- This indicates that chunk data is not correctly generated or transferred for larger dungeon sizes.
+  
