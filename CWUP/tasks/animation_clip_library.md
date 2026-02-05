@@ -25,13 +25,12 @@ No custom animation DSL or scripting language is required.
 
 ### 1. Animation Asset Structure
 Define a stable convention for animation assets:
-RaidSimulator
-├─ animations/
-  ├─ idle.glb
-  ├─ walk.glb
-  ├─ run.glb
-  ├─ attack.glb
-  ├─ jump.glb
+Assets/animations/
+      ├─ idle.glb
+      ├─ walk.glb
+      ├─ run.glb
+      ├─ attack.glb
+      ├─ jump.glb
 
 Each file:
 - contains animation data
