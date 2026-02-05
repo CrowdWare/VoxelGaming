@@ -58,7 +58,7 @@ Each file:
 ### 4. Runtime Behavior
 - Animation selection is driven by code/state (idle, moving, attacking, etc.)
 - Animation assets are treated as pure data
-- No animation logic is encoded in text files or DSLs
+- The functionality shall be stored in VoxelEngine
 
 ---
 
