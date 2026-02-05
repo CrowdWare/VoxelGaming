@@ -76,7 +76,7 @@
 ## Tasks
 - [x] tasks/player_startpoint.md
 - [x] tasks/physics_character_controller.md
-- [ ] tasks/shared_block_rendering.md
+- [x] tasks/shared_block_rendering.md
 - [ ] tasks/builder_startpoint.md
 - [ ] tasks/builder_character_controller.md
 - [ ] tasks/deterministic_world_loading.md
