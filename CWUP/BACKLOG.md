@@ -83,7 +83,9 @@
 - [x] tasks/menu.md
 - [x] tasks/save_chunked.md
 - [x] tasks/deterministic_world_loading.md
-- [ ] tasks/animation_clip_library.md
+- [x] tasks/animation_clip_library.md
+- [ ] tasks/loading_texture.md
+- [ ] tasks/play_animation.md
 - [ ] tasks/third_person_controller.md
 
   
