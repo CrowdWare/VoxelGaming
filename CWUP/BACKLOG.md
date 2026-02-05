@@ -79,6 +79,8 @@
 - [x] tasks/shared_block_rendering.md
 - [x] tasks/builder_startpoint.md
 - [x] tasks/builder_character_controller.md
+- [ ] tasks/menu.md
+- [ ] tasks/save_chunked.md
 - [ ] tasks/deterministic_world_loading.md
 - [ ] tasks/animation_clip_library.md
 - [ ] tasks/third_person_controller.md
