@@ -84,7 +84,7 @@
 - [x] tasks/save_chunked.md
 - [x] tasks/deterministic_world_loading.md
 - [x] tasks/animation_clip_library.md
-- [ ] task/tile_collision.md
+- [x] task/tile_collision.md
 - [ ] tasks/skinned_character_material.md
 - [ ] tasks/third_person_controller.md
 
